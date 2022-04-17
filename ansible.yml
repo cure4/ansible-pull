@@ -1,9 +1,10 @@
 ---
 - name: manage windows servers
-  hosts: win
+  hosts: localhost
   become: false
   tasks:
   - name: create dir
+    hosts: win
     win_file:
       path: C:\Temp\folder\sina\1
       state: directory
