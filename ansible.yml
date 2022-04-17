@@ -3,8 +3,8 @@
   hosts: localhost
   become: false
   tasks:
-  - name: create dir
     hosts: win
+  - name: create dir
     win_file:
       path: C:\Temp\folder\sina\1
       state: directory
