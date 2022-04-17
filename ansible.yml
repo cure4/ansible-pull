@@ -1,10 +1,8 @@
 ---
-- name: manage windows servers
-  hosts: win 
-  become: false
+- name: pull
+  hosts: localhost
+  connection: local 
+  become: true
   tasks:
-  - name: create dir
-    win_file:
-      path: C:\Temp\folder\sina\1
-      state: directory
+    - include: tasks/packages.yml
     
