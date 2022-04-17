@@ -3,7 +3,7 @@
   hosts: win
   become: false
   tasks:
-  - name: create dir
-    win_file:
-      path: C:\Temp\folder\sina\2
-      state: directory
+   - name: create dir
+     win_file:
+       path: C:\Temp\folder\sina\2
+       state: directory
