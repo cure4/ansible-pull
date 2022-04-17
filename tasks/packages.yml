@@ -3,7 +3,7 @@
   become: false
   tasks:
   - name: install firefox
-    win_chocolatey:
+     win_chocolatey:
       name: '{{item}}'
       state: present
     loop:
