@@ -1,10 +1,9 @@
 ---
-- hosts: win
+- name: manage windows servers
+  hosts: win
   become: false
   tasks:
-  - name: install firefox
-     win_chocolatey:
-      name: '{{item}}'
-      state: present
-    loop:
-    - firefox
+  - name: create dir
+    win_file:
+      path: C:\Temp\folder\sina\2
+      state: directory
