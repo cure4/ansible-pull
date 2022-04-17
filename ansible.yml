@@ -1,6 +1,6 @@
 ---
 - name: manage windows servers
-  hosts: win
+  hosts: host
   become: false
   tasks:
   - name: create dir
