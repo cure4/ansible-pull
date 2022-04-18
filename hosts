@@ -3,7 +3,7 @@
 
 [win:vars]
 ansible_user=Administrator
-ansible_password="$i123456"
+ansible_password=""
 ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_scheme=https
